@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
 import { useDarktraceStore } from '../store/useDarktraceStore';
 import {
-  Database,
   Search,
-  Filter,
   Download,
   ChevronLeft,
-  ChevronRight,
-  ArrowUpDown,
-  ExternalLink,
-  Layers
+  ChevronRight
 } from 'lucide-react';
 
 export const DataExplorerPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {

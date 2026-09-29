@@ -3,15 +3,8 @@ import { useDarktraceStore } from '../store/useDarktraceStore';
 import { AutonomousMonitor3D } from '../components/3d/AutonomousMonitor3D';
 import {
   Cpu,
-  Radio,
   RefreshCw,
-  Terminal,
-  Activity,
-  Shield,
-  Layers,
-  CheckCircle2,
-  AlertTriangle,
-  Play
+  Terminal
 } from 'lucide-react';
 
 export const AutonomousMonitorPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {

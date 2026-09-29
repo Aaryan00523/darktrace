@@ -3,16 +3,7 @@ import { useDarktraceStore } from '../store/useDarktraceStore';
 import { PersonaSpace3D } from '../components/3d/PersonaSpace3D';
 import {
   BrainCircuit,
-  MessageSquare,
-  Clock,
-  Sparkles,
-  Shield,
-  Layers,
-  CheckCircle2,
-  Lock,
-  ChevronRight,
-  TrendingUp,
-  FileText
+  Sparkles
 } from 'lucide-react';
 import { Persona } from '../types';
 

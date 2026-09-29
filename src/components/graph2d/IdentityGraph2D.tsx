@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
 import { Relationship } from '../../types';
-import { ZoomIn, ZoomOut, RotateCcw, Shield, Layers } from 'lucide-react';
+import { ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
 
 export const IdentityGraph2D: React.FC<{
   onSelectNode?: (node: any) => void;

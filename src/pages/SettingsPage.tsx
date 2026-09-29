@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDarktraceStore, PerformanceMode } from '../store/useDarktraceStore';
-import { Settings, Sliders, Shield, RefreshCw, Box, Eye, CheckCircle2 } from 'lucide-react';
+import { Sliders, RefreshCw, Box, CheckCircle2 } from 'lucide-react';
 
 export const SettingsPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {
   const store = useDarktraceStore();

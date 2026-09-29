@@ -10,14 +10,9 @@ import {
   Radio,
   Activity,
   Shield,
-  Layers,
   ExternalLink,
   ChevronRight,
-  TrendingUp,
-  AlertTriangle,
-  FileText,
-  CornerDownRight,
-  Eye
+  TrendingUp
 } from 'lucide-react';
 
 export const DashboardPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {

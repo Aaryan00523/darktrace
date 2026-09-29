@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
-import { Compass, CheckCircle2, ChevronRight, X, Play } from 'lucide-react';
+import { Compass, CheckCircle2, ChevronRight, X } from 'lucide-react';
 
 export const DemoModeGuide: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {
   const store = useDarktraceStore();

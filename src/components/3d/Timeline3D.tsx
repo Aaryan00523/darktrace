@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
 import { TimelineEvent } from '../../types';
-import { RotateCcw, ZoomIn, ZoomOut, Calendar, Shield, ExternalLink } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut, Calendar } from 'lucide-react';
 
 export const Timeline3D: React.FC<{
   onSelectEvent?: (event: TimelineEvent) => void;
@@ -229,7 +229,7 @@ export const Timeline3D: React.FC<{
     const handleResize = () => {
       if (!container) return;
       camera.aspect = container.clientWidth / container.clientHeight;
-      camera.updateProjectionMatrix;
+      camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
     };
     window.addEventListener('resize', handleResize);

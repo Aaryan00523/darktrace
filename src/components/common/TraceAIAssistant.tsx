@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
-import { Bot, X, Send, Sparkles, Shield, ChevronRight, CornerDownLeft, Database } from 'lucide-react';
+import { Bot, X, Send } from 'lucide-react';
 
 interface ChatMessage {
   id: string;

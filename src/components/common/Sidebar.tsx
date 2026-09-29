@@ -16,8 +16,7 @@ import {
   HelpCircle,
   Settings,
   ChevronLeft,
-  ChevronRight,
-  ShieldAlert
+  ChevronRight
 } from 'lucide-react';
 
 interface SidebarProps {

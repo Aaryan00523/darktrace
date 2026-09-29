@@ -4,19 +4,12 @@ import {
   Users,
   Shield,
   Search,
-  Filter,
-  ExternalLink,
   Key,
   Wallet,
-  Server,
   FileText,
-  AlertTriangle,
-  CheckCircle2,
   Lock,
-  ChevronRight,
   TrendingUp,
-  BrainCircuit,
-  FolderGit2
+  BrainCircuit
 } from 'lucide-react';
 
 export const ActorsPage: React.FC<{

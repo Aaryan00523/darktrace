@@ -205,7 +205,7 @@ export function exportInvestigationPDF(
   doc.text('3. KEY FORENSIC EVIDENCE ARTIFACTS', 14, y);
   y += 6;
 
-  evidence.slice(0, 4).forEach((ev, i) => {
+  evidence.slice(0, 3).forEach((ev) => {
     doc.setFontSize(9);
     doc.setFont('helvetica', 'bold');
     doc.text(`[${ev.id}] ${ev.title} (${ev.confidence}% Confidence)`, 16, y);
@@ -217,6 +217,20 @@ export function exportInvestigationPDF(
     doc.text(splitEv, 18, y);
     y += splitEv.length * 4.5 + 2;
   });
+
+  if (y < 250) {
+    doc.setFontSize(10);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(15, 23, 42);
+    doc.text(`4. CORRELATED INFRASTRUCTURE & IDENTIFIERS (${identifiers.length + infrastructure.length} Records)`, 14, y);
+    y += 5.5;
+    doc.setFontSize(8.5);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(51, 65, 85);
+    const summaryLine = `Correlated: ${identifiers.slice(0, 3).map(id => id.value).join(', ')} across ${relationships.length} links and ${personas.length} personas.`;
+    doc.text(doc.splitTextToSize(summaryLine, pageWidth - 36), 16, y);
+    y += 8;
+  }
 
   // Footer Disclaimer
   doc.setFontSize(7.5);

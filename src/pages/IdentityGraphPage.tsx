@@ -3,17 +3,7 @@ import { useDarktraceStore } from '../store/useDarktraceStore';
 import { IdentityGraph3D } from '../components/3d/IdentityGraph3D';
 import { IdentityGraph2D } from '../components/graph2d/IdentityGraph2D';
 import {
-  Network,
-  Box,
-  Layers,
-  Shield,
-  FolderPlus,
-  Info,
-  Maximize2,
-  ExternalLink,
-  ChevronRight,
-  Filter,
-  CheckCircle2
+  FolderPlus
 } from 'lucide-react';
 import { Relationship } from '../types';
 

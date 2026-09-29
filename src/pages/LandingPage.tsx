@@ -1,7 +1,7 @@
 import React from 'react';
 import { IntelligenceGlobe3D } from '../components/3d/IntelligenceGlobe3D';
 import { useDarktraceStore } from '../store/useDarktraceStore';
-import { Shield, ArrowRight, Play, Server, Network, BrainCircuit, CheckCircle2, Lock, ChevronRight } from 'lucide-react';
+import { Shield, ArrowRight, Play, Server, Network, BrainCircuit, Lock } from 'lucide-react';
 
 export const LandingPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {
   const store = useDarktraceStore();

@@ -3,15 +3,7 @@ import { useDarktraceStore } from '../store/useDarktraceStore';
 import { Infrastructure3D } from '../components/3d/Infrastructure3D';
 import {
   Server,
-  Search,
-  Filter,
-  Shield,
-  Layers,
-  ExternalLink,
-  ChevronRight,
-  Globe,
-  Key,
-  FolderPlus
+  Search
 } from 'lucide-react';
 import { InfrastructureIndicator } from '../types';
 

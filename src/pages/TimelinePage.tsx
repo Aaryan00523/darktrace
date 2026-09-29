@@ -2,15 +2,7 @@ import React, { useState } from 'react';
 import { useDarktraceStore } from '../store/useDarktraceStore';
 import { Timeline3D } from '../components/3d/Timeline3D';
 import {
-  Calendar,
-  Search,
-  Filter,
-  Shield,
-  Clock,
-  ExternalLink,
-  ChevronRight,
-  TrendingUp,
-  FileText
+  Clock
 } from 'lucide-react';
 import { TimelineEvent } from '../types';
 
@@ -137,6 +129,54 @@ export const TimelinePage: React.FC<{ onNavigate: (path: string) => void }> = ({
           ))}
         </div>
       </div>
+
+      {/* Selected Event Details Modal */}
+      {selectedEvent && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-950/80 backdrop-blur-sm select-none font-mono">
+          <div className="w-full max-w-lg bg-dark-800 border border-cyan/50 rounded-xl shadow-2xl p-5 space-y-4 text-xs">
+            <div className="flex justify-between items-center border-b border-dark-600 pb-2">
+              <div>
+                <span className="text-cyan font-bold text-[10px] block">{selectedEvent.date} • {selectedEvent.eventType}</span>
+                <h3 className="text-base font-sans font-bold text-white mt-0.5">{selectedEvent.title}</h3>
+              </div>
+              <button
+                onClick={() => setSelectedEvent(null)}
+                className="text-slate-400 hover:text-white text-sm"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="bg-dark-850 p-3 rounded-lg border border-dark-700 space-y-2">
+              <div className="flex justify-between">
+                <span className="text-slate-500">ATTRIBUTED ACTOR:</span>
+                <span className="text-white font-bold">{selectedEvent.actorName}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">CONFIDENCE:</span>
+                <span className="text-cyan font-bold">{selectedEvent.confidence}%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">SIGNIFICANCE:</span>
+                <span className="text-emerald-400 font-bold uppercase">{selectedEvent.significance}</span>
+              </div>
+            </div>
+
+            <p className="text-slate-300 font-sans text-xs leading-relaxed bg-dark-900 p-3 rounded border border-dark-700">
+              {selectedEvent.description}
+            </p>
+
+            <div className="flex justify-end pt-2 border-t border-dark-600">
+              <button
+                onClick={() => setSelectedEvent(null)}
+                className="px-4 py-1.5 rounded bg-cyan text-dark-950 font-bold hover:bg-cyan/90 transition-colors"
+              >
+                CLOSE
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

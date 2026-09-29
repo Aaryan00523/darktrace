@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
-import { Activity, Radio, Cpu, RefreshCw } from 'lucide-react';
+import { Radio, RefreshCw } from 'lucide-react';
 
 export const AutonomousMonitor3D: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -130,7 +130,7 @@ export const AutonomousMonitor3D: React.FC = () => {
 
     const animate = () => {
       animId = requestAnimationFrame(animate);
-      const delta = clock.getDelta();
+      clock.getDelta();
       const speedMultiplier = store.isScanning ? 3.5 : 1.0;
 
       coreMesh.rotation.y += 0.02 * speedMultiplier;

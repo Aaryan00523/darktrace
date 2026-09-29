@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
-import { RotateCcw, ZoomIn, ZoomOut, Server, Globe, Key, Shield, Layers } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut, Server } from 'lucide-react';
 
 interface InfraNodeData {
   tier: number;

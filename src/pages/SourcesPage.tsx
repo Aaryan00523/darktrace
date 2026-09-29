@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDarktraceStore } from '../store/useDarktraceStore';
-import { Radio, Search, Filter, ShieldCheck, CheckCircle2, AlertTriangle, Info, RefreshCw } from 'lucide-react';
+import { Radio, Search, Info, RefreshCw } from 'lucide-react';
 
 export const SourcesPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {
   const store = useDarktraceStore();

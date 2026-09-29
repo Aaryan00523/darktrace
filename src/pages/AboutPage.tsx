@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Lock, BrainCircuit, Network, Server, FileText, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Lock, BrainCircuit, Network } from 'lucide-react';
 
 export const AboutPage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {
   const pipelineSteps = [

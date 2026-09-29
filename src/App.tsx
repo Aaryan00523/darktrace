@@ -25,7 +25,7 @@ import { ArchitecturePage } from './pages/ArchitecturePage';
 import { AboutPage } from './pages/AboutPage';
 import { SettingsPage } from './pages/SettingsPage';
 
-import { Shield, Cpu, Terminal } from 'lucide-react';
+import { Shield, Terminal } from 'lucide-react';
 
 export function App() {
   const store = useDarktraceStore();

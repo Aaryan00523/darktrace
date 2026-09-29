@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
-import { Layers, Database, Cpu, Shield, Globe, Terminal, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import { Layers, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 
 interface ArchLayerData {
   id: string;

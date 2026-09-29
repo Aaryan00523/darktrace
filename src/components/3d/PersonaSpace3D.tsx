@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { useDarktraceStore } from '../../store/useDarktraceStore';
 import { Persona } from '../../types';
-import { RotateCcw, ZoomIn, ZoomOut, Brain, Sparkles } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut, Brain } from 'lucide-react';
 
 export const PersonaSpace3D: React.FC<{
   onSelectPersona?: (persona: Persona) => void;

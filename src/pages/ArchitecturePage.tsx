@@ -1,6 +1,6 @@
 import React from 'react';
 import { Architecture3D } from '../components/3d/Architecture3D';
-import { Layers, Database, Cpu, Shield, Globe, Terminal, Server, Network } from 'lucide-react';
+import { Layers, Database, Cpu } from 'lucide-react';
 
 export const ArchitecturePage: React.FC<{ onNavigate: (path: string) => void }> = ({ onNavigate }) => {
   return (

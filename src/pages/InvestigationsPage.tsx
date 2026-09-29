@@ -4,18 +4,8 @@ import { IdentityGraph3D } from '../components/3d/IdentityGraph3D';
 import {
   FolderGit2,
   FolderPlus,
-  Shield,
-  FileText,
-  Clock,
-  Server,
-  BrainCircuit,
-  MessageSquare,
   Download,
-  Plus,
-  CheckCircle2,
-  AlertTriangle,
-  Send,
-  ExternalLink
+  Send
 } from 'lucide-react';
 import { exportInvestigationPDF, exportInvestigationJSON, exportInvestigationCSV } from '../utils/exportUtils';
 import { Investigation } from '../types';
@@ -46,7 +36,7 @@ export const InvestigationsPage: React.FC<{
     e.preventDefault();
     if (!newCodename.trim() || !newTitle.trim()) return;
 
-    const newId = store.createInvestigation({
+    store.createInvestigation({
       codename: newCodename,
       title: newTitle,
       priority: newPriority,

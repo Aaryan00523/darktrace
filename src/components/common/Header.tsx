@@ -6,10 +6,7 @@ import {
   Bot,
   RefreshCw,
   Compass,
-  Sliders,
-  Layers,
   Terminal,
-  Activity,
   Box
 } from 'lucide-react';
 

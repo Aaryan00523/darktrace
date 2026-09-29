@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
 import { useDarktraceStore } from '../store/useDarktraceStore';
 import {
-  FileText,
   Download,
-  ShieldCheck,
-  CheckCircle2,
-  Lock,
-  Printer,
-  FileCheck,
-  Share2,
-  Calendar,
-  Layers,
-  Sparkles
+  FileCheck
 } from 'lucide-react';
 import { exportInvestigationPDF, exportInvestigationJSON, exportInvestigationCSV } from '../utils/exportUtils';
 
